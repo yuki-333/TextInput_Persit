@@ -1,11 +1,7 @@
 import React from "react";
 import {
-    StyleSheet,
     Text,
     View,
-    Dimensions,
-    TouchableOpacity,
-    ScrollView,
     Button,
     TextInput,
   } from 'react-native';
@@ -23,7 +19,9 @@ class App extends React.Component {
       return (
         <View style={styles.container}>
         <Text style={styles.text}>
-            CURLY {this.props.title}
+            {this.props.title}
+        </Text>
+        <Text style={styles.text}>
             {this.props.todo}
         </Text>
             <TextInput

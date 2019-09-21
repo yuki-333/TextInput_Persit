@@ -7,6 +7,6 @@ export default styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        fontSize: 50,
+        fontSize: 30,
     }
 });

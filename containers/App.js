@@ -1,7 +1,7 @@
 import App from "../components/App";
 import { connect } from "react-redux";
 
-import { plus, minus, addTodo } from '../actions'
+import { addTodo } from '../actions'
 
 
 const mapStateToProps = state => {
@@ -13,7 +13,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
    return {
-       onAddToDo(todo) {
+       onAddToDo: todo => {
            dispatch(addTodo(todo))
        }
    };

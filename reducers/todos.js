@@ -1,8 +1,8 @@
 const initialState = {
-    list: '初期値'
+    list: 'InitialState'
 }
 
-export function todos( state = initialState, action) {
+export const todos =( state = initialState, action) => {
     switch(action.type) {
         case "ADD_TO_DO":
             return  {
