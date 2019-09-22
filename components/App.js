@@ -22,7 +22,7 @@ class App extends React.Component {
             {this.props.title}
         </Text>
         <Text style={styles.text}>
-            {this.props.todo}
+            Redux + Persist {this.props.todo}
         </Text>
             <TextInput
                 placeholder="write here..." 
@@ -38,6 +38,7 @@ class App extends React.Component {
     }
   }
 
-
 export default App;
+
+
 
