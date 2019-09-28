@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 
 import title from "./title";
-import todos from "./todos"
+import words from "./todos"
 
 export default combineReducers({
     title,
-    todos,
+    words,
 });

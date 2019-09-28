@@ -2,16 +2,16 @@ const initialState = {
     list: 'InitialState'
 }
 
-export const todos =( state = initialState, action) => {
+export const words =( state = initialState, action) => {
     switch(action.type) {
-        case "ADD_TO_DO":
+        case "ADD_WORD":
             return  {
-                list: action.todo
+                list: action.word
             };
         default:
             return state;
     }
 }
 
-export default todos;
+export default words;
 

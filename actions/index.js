@@ -1,6 +1,6 @@
-export const addTodo = (todo) => {
+export const addWord = (word) => {
     return {
-        type: 'ADD_TO_DO',
-        todo
+        type: 'ADD_WORD',
+        word
     }
 }

@@ -6,19 +6,20 @@ import store, { persistor } from "./containers/store"
 
 import { PersistGate } from 'redux-persist/es/integration/react'
 
-import App from "./containers/App"
+import Container from "./containers"
 
 
-export default class Home extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <App />
+          <Container />
         </PersistGate>
       </Provider>
     );
   }
 }
+
 
 
